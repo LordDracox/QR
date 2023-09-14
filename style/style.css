@@ -1,7 +1,7 @@
 /* En tu archivo style.css */
 /* En tu archivo style.css */
 body {
-    background-color: aqua;
+    background-color:rgb(160, 160, 206);
   }
   
   .wrapper {
@@ -32,5 +32,94 @@ body {
   .qr {
     display: flex;
     justify-content: center;
+  }
+.words{
+    text-align: center;
+    top: 20px;
+
+}
+.text{
+    color: grey;
+}
+/* Estilo inicial para el texto dentro de .attribution */
+.attribution {
+    color: black; /* Color inicial (puede ser cualquier color que desees) */
+  }
+  
+  /* Estilo para el enlace dentro de .attribution en su estado de enlace */
+  .attribution a:link {
+    color: inherit; /* Hereda el color del elemento padre (en este caso, negro) */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+  }
+  
+  /* Estilo para el enlace dentro de .attribution en su estado visitado */
+  .attribution a:visited {
+    color: inherit; /* Hereda el color del elemento padre (en este caso, negro) */
+  }
+  
+  /* Estilo para el enlace dentro de .attribution cuando se pasa el mouse sobre él */
+  .attribution a:hover {
+    color: blue; /* Cambia el color a azul cuando se pasa el mouse sobre el enlace */
+  }
+/* Estilos para dispositivos móviles (como los que proporcionaste anteriormente) */
+
+/* Estilos para pantallas de escritorio */
+@media screen and (min-width: 768px) {
+    body {
+      background-color: rgb(160, 160, 206);
+    }
+  
+    .wrapper {
+      height: 100vh; /* Aprovechar toda la altura de la pantalla */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .container {
+      width: 300px; /* Ancho mayor para pantallas de escritorio */
+      background: white;
+      padding: 40px; /* Mayor espacio interior */
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra más grande */
+      overflow: hidden;
+    }
+  
+    .qr img {
+      max-width: 100%;
+      max-height: 300px; /* Altura máxima para la imagen */
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 20px;
+    }
+  
+    .qr {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .words {
+      text-align: center;
+      margin-top: 20px; /* Espaciado superior */
+    }
+  
+    .text {
+      color: grey;
+    }
+  
+    .attribution {
+      color: black;
+    }
+  
+    .attribution a:link,
+    .attribution a:visited {
+      color: inherit;
+      text-decoration: none;
+    }
+  
+    .attribution a:hover {
+      color: blue;
+    }
   }
   
